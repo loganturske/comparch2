@@ -1,0 +1,18 @@
+4. Needs to be word aligned which is 32-2= 30 and then you have the upper 4 bits will always be reserved so 30-4 = 26bits
+
+5. The idea behind $PC relative addressing in MIPS is that you can branch to a certain point in your program and they are relocatable. It is not a good idea to make branch statements absolute because that would take away the ability to relocate the branch statements anywhere in the subprogram.
+
+6. False
+
+7.branch statements only allow 16bits from current PC and jump statements can address 26bits and cannot be relocated
+
+8.	heap: runnable code, allocated memory
+	stack: method local variables, return addresses, and saved calues to be restored at end of execution
+	static: data segment, global variables, extern variables
+	bss: initialized to 0 at start,
+
+9.
+
+10. static variables are allocated in the static region at the start of the program but has no external definition. external variables are defined in another file but no allocation is made. global is memory that is static but as some external definition and can be accessed from other files
+
+11. DLL hell is when you have multiple programs on you system that want to use a certain DLL or .so file but they want different versions. 
