@@ -1,0 +1,24 @@
+# Write a program that will sum the values in the following array, and write out the answer.
+# This program should output "The sum is 25"
+# Note: the number of elements in the array is given..text
+.globl main
+.text
+
+main:
+	lw  $t1, arr		# Load the word stored at label 'arr'
+	li $v0, 4			# Get ready to print the string
+
+
+	la $a0, strA	# address of string to print
+	syscall			# print the string
+	li $v0, 10		# Sets $v0 to "10" to select exit syscall
+	syscall 		# Exi
+	
+.data
+	strA .asciiz "The sum is "
+	arrSize: .word 4
+	arr: 
+		.word 7
+		.word 9
+		.word 4
+		.word 5
