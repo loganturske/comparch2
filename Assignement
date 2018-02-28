@@ -11,7 +11,7 @@
 	static: data segment, global variables, extern variables
 	bss: initialized to 0 at start,
 
-9.
+9.OBJ files don't have base relocations. Instead, they have regular symbol-based fixups that other programs who use those OBJ files need to use to be able to resolve locations.
 
 10. static variables are allocated in the static region at the start of the program but has no external definition. external variables are defined in another file but no allocation is made. global is memory that is static but as some external definition and can be accessed from other files
 
