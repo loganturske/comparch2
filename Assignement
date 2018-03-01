@@ -1,3 +1,14 @@
+
+3.	 11->10->01->00->11
+
+	Input					Output
+	Q1old	Q2old	Clock	Q1new	Q2new
+	X		X 		0		Q1old	Q2old
+	1		1		Up 		1		0
+	1		0		Up 		0		1
+	0		1 		Up 		0 		0
+	0 		0		Up 		1		1	
+
 4. Needs to be word aligned which is 32-2= 30 and then you have the upper 4 bits will always be reserved so 30-4 = 26bits
 
 5. The idea behind $PC relative addressing in MIPS is that you can branch to a certain point in your program and they are relocatable. It is not a good idea to make branch statements absolute because that would take away the ability to relocate the branch statements anywhere in the subprogram.
