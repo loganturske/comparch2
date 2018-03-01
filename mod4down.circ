@@ -60,30 +60,37 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(280,460)" to="(280,560)"/>
+    <wire from="(660,550)" to="(660,560)"/>
+    <wire from="(610,520)" to="(610,560)"/>
     <wire from="(280,460)" to="(690,460)"/>
-    <wire from="(620,580)" to="(620,610)"/>
-    <wire from="(640,560)" to="(690,560)"/>
-    <wire from="(590,610)" to="(620,610)"/>
-    <wire from="(750,560)" to="(760,560)"/>
-    <wire from="(280,560)" to="(350,560)"/>
-    <wire from="(690,460)" to="(690,560)"/>
+    <wire from="(660,560)" to="(690,560)"/>
+    <wire from="(690,540)" to="(720,540)"/>
     <wire from="(490,560)" to="(610,560)"/>
-    <comp lib="0" loc="(760,560)" name="Pin">
-      <a name="facing" val="west"/>
+    <wire from="(630,540)" to="(630,610)"/>
+    <wire from="(590,610)" to="(630,610)"/>
+    <wire from="(660,520)" to="(660,550)"/>
+    <wire from="(690,460)" to="(690,540)"/>
+    <wire from="(650,550)" to="(660,550)"/>
+    <wire from="(650,520)" to="(660,520)"/>
+    <wire from="(280,560)" to="(350,560)"/>
+    <wire from="(690,540)" to="(690,560)"/>
+    <wire from="(610,520)" to="(620,520)"/>
+    <comp lib="4" loc="(650,520)" name="Register">
       <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(590,610)" name="Clock"/>
+    <comp lib="0" loc="(720,540)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="4" loc="(490,560)" name="ROM">
       <a name="addrWidth" val="2"/>
       <a name="dataWidth" val="2"/>
       <a name="contents">addr/data: 2 2
-1 2 3
+3 0 1 2
 </a>
-    </comp>
-    <comp lib="4" loc="(640,560)" name="Counter">
-      <a name="width" val="2"/>
-      <a name="max" val="0x3"/>
     </comp>
   </circuit>
 </project>
